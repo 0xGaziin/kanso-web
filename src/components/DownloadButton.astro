@@ -1,0 +1,34 @@
+---
+import '../styles/global.css';
+---
+
+<a href="/downloads" class="btn-download">
+  <span>Download</span>
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M12 5v14"/>
+    <path d="m19 12-7 7-7-7"/>
+  </svg>
+</a>
+
+<style>
+  .btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background-color: var(--surface);
+    color: var(--fg);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+  .btn-download:hover {
+    background-color: var(--accent-bg);
+    border-color: var(--accent-bg);
+    color: var(--accent-fg);
+  }
+</style>
